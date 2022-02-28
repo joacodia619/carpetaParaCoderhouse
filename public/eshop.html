@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -39,19 +40,20 @@
                 </h3>
             </div>
             <div class="products-eshop">
-                <div class="name1-eshop">
+                <div class="name1-eshop" data-aos="flip-right">
+
                     <img src="../images/5be07f29cf68791849f44248cd6e6916_640x640.jpg" alt="cerveza1">
                     <p>
                         New England Ipa
                     </p>
                 </div>
-                <div class="name2-eshop">
+                <div class="name2-eshop" data-aos="flip-right">
                     <img src="../images/cerveza artesanal en vaso.jpg" alt="cerveza2">
                     <p>
                         Sauving Belgian Blond
                     </p>
                 </div>
-                <div class="name3-eshop">
+                <div class="name3-eshop" data-aos="flip-right">
                     <img src="../images/images.jfif" alt="cerveza3">
                     <p>
                         Brown Ale
@@ -75,6 +77,12 @@
         </section>
     </footer>
     <script src="https://kit.fontawesome.com/eabd3c3b4a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1300
+      })
+    </script>
 
 </body>
 
