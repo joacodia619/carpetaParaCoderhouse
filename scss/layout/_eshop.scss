@@ -1,0 +1,26 @@
+.main-eshop {
+    height: auto;
+    width: 100%;
+    .container-eshop {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+        background-color: #6a040f;
+        .row{
+            .col{
+                .div-tittle-eshop{
+                    text-align: center;
+                    color: white;
+                    padding-top: 10px;
+                }
+                .div-text-eshop{
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+}

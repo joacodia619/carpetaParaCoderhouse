@@ -1,0 +1,29 @@
+.main-local {
+    height: auto;
+    width: 100%;
+    margin: 0px 0px;
+    background-color: #b6ad90;
+    .container-local {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+        .tittle-local {
+            width: 100%;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+        .mapa {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+            iframe {
+                width: 100% !important;
+            }
+    }
+}
