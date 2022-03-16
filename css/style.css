@@ -259,7 +259,7 @@
   height: auto;
   width: 100%;
   margin: 0px 0px;
-  background-image: url(../images/beer-2166004_1920.jpg);
+  background-image: url("../images/beer-2166004_1920.webp");
   background-size: cover; }
   .main-contacto .container-contacto {
     height: 100%;
@@ -521,6 +521,23 @@
   .footer .icons i {
     font-size: 20px;
     margin: 0px 10px; }
+  .footer .arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9; }
+    .footer .arrow a {
+      height: 39px;
+      width: 37px;
+      text-align: center;
+      background: #001d3d;
+      display: block;
+      border-radius: 3px; }
+      .footer .arrow a span {
+        color: white;
+        font-size: 25px;
+        line-height: 39px;
+        cursor: pointer; }
 
 @media only screen and (min-width: 480px) {
   .footer {

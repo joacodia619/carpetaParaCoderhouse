@@ -1,0 +1,831 @@
+.header {
+  height: 70px;
+  width: 100%;
+}
+
+.header .navbar {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.header .navbar .logo {
+  height: 100%;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.header .navbar .logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 80%;
+  width: 30%;
+}
+
+.header .navbar .logo p {
+  margin-left: 15px;
+  margin-top: 0px;
+  width: 250px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 25px;
+  color: black;
+}
+
+.header .navbar .checkbtn {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2c3e50;
+  color: #faf9f9;
+  margin: 10px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 15;
+}
+
+.header .navbar .checkbtn::before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 10px 0 #fff;
+          box-shadow: 0 10px 0 #fff;
+}
+
+.header .navbar .checkbtn::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.header .navbar #check {
+  display: none;
+}
+
+.header .navbar #check:checked ~ .lista {
+  left: 0;
+}
+
+.header .navbar #check:checked ~ .checkbtn {
+  background: #f7226a;
+}
+
+.header .navbar #check:checked ~ .checkbtn::before {
+  -webkit-transform: translateY(0px) rotate(45deg);
+          transform: translateY(0px) rotate(45deg);
+  -webkit-box-shadow: 0 0 0 #fff;
+          box-shadow: 0 0 0 #fff;
+}
+
+.header .navbar #check:checked ~ .checkbtn::after {
+  -webkit-transform: translateY(0px) rotate(-45deg);
+          transform: translateY(0px) rotate(-45deg);
+}
+
+.header .navbar .lista {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  background: #2c3e50;
+  top: 70px;
+  left: -100%;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  z-index: 1;
+  padding: 0;
+}
+
+.header .navbar .lista .lista-item a {
+  width: 100%;
+  font-size: 25px;
+  display: block;
+  line-height: 80px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header .navbar .lista .lista-item a:hover {
+  background: #2286e6;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .navbar .checkbtn {
+    display: none !important;
+  }
+  .header .navbar .lista {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    background: none;
+    margin: 0px;
+  }
+  .header .navbar .lista .lista-item {
+    padding: 0px 1em;
+  }
+  .header .navbar .lista .lista-item a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: black;
+  }
+  .header .navbar .lista .lista-item a:hover {
+    background: none;
+    color: #48cae4;
+  }
+}
+
+.main-index {
+  width: 100%;
+  height: auto;
+}
+
+.main-index .div-chela-index {
+  height: 560px;
+  width: 100%;
+  background-color: #bfc0c0;
+  color: black;
+  z-index: 1;
+}
+
+.main-index .div-chela-index .titulo-index {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.main-index .carousel-inner .row .col .carousel .carousel-item {
+  height: 500px;
+}
+
+.main-index .carousel-inner .row .col .carousel .carousel-item img {
+  height: 100%;
+}
+
+.main-index .div-marca-index {
+  height: 250px;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+
+.main-index .div-marca-index .text-index {
+  text-align: center;
+}
+
+.main-index .div-marca-index video {
+  z-index: -1;
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-index .div-marca-index::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: #001d3d;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+}
+
+.main-index .div-shop-index {
+  height: 200px;
+  width: 100%;
+  color: white;
+}
+
+.main-index .div-shop-index video {
+  z-index: -1;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-index .div-shop-index::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: #9d0208;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+}
+
+.main-index .div-local-index {
+  height: 350px;
+  width: 100%;
+  background-image: url("../images/contacto.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.main-index .div-local-index::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: #b6ad90;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+}
+
+.main-index .div-contacto-index {
+  height: 200px;
+  width: 100%;
+  z-index: 1;
+  background-image: url("../images/local.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.main-index .div-contacto-index::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: #414833;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-index {
+    height: 600px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 30% 10% 20%;
+        grid-template-columns: 40% 30% 10% 20%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  .main-index .div-chela-index {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    height: 100%;
+  }
+  .main-index .div-chela-index .carousel-inner .row .col .carousel .carousel-inner .carousel-item {
+    height: 375px;
+    margin-top: 50px;
+  }
+  .main-index .div-marca-index {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    height: 100%;
+  }
+  .main-index .div-marca-index video {
+    height: 300px;
+  }
+  .main-index .div-shop-index {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    height: 100%;
+  }
+  .main-index .div-shop-index video {
+    height: 300px;
+  }
+  .main-index .div-local-index {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    height: 100%;
+  }
+  .main-index .div-contacto-index {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-index .div-chela-index .carousel-item {
+    height: 500px;
+  }
+}
+
+.main-contacto {
+  height: auto;
+  width: 100%;
+  margin: 0px 0px;
+  background-image: url(../images/beer-2166004_1920.webp);
+  background-size: cover;
+}
+
+.main-contacto .container-contacto {
+  height: 100%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px auto;
+}
+
+.main-contacto .container-contacto .title-formulario {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+.main-contacto .container-contacto .description-formulario {
+  font-size: 18px;
+  color: white;
+}
+
+.main-contacto .container-contacto .form {
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.main-contacto .container-contacto .form .label {
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.main-contacto .container-contacto .form .label input {
+  display: block;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.main-contacto .container-contacto .form .label select {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.main-contacto .container-contacto .form .label textarea {
+  display: block;
+  width: 90%;
+  height: 140px;
+  resize: none;
+  font-size: 18px;
+  color: black;
+  padding: 5px 10px;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-contacto .container-contacto .form .btn {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  margin: 10px auto 0px;
+}
+
+@media only screen and (min-width: 480px) {
+  .main-contacto .container-contacto .form .btn {
+    width: 50%;
+  }
+}
+
+.main-eshop {
+  height: auto;
+  width: 100%;
+}
+
+.main-eshop .container-eshop {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  background-color: #6a040f;
+}
+
+.main-eshop .container-eshop .row .col .div-tittle-eshop {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+.main-eshop .container-eshop .row .col .div-text-eshop {
+  text-align: center;
+  color: white;
+}
+
+.main-local {
+  height: auto;
+  width: 100%;
+  margin: 0px 0px;
+  background-color: #b6ad90;
+}
+
+.main-local .container-local {
+  height: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+}
+
+.main-local .container-local .tittle-local {
+  width: 100%;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.main-local .container-local .mapa {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-local .container-local iframe {
+  width: 100% !important;
+}
+
+.main-marca {
+  height: auto;
+  width: 100%;
+  margin: 0px 0px;
+  background-color: #001d3d;
+}
+
+.main-marca .container-marca {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+}
+
+.main-marca .container-marca .first-part-marca {
+  position: relative;
+  height: 650px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.main-marca .container-marca .first-part-marca .tittle-marca {
+  width: 100%;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.main-marca .container-marca .first-part-marca img {
+  width: 140px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.main-marca .container-marca .first-part-marca .img1-first-part-marca {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.main-marca .container-marca .first-part-marca .description-marca {
+  position: absolute;
+  width: 280px;
+  height: 180px;
+  font-size: 18px;
+  color: white;
+  top: 40%;
+  margin: 0 auto;
+  left: 10px;
+}
+
+.main-marca .container-marca .first-part-marca .img2-first-part-marca {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.main-marca .container-marca .second-part-marca {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 20px;
+}
+
+.main-marca .container-marca .second-part-marca .elpdelamarca {
+  width: 100%;
+  text-align: left;
+}
+
+.main-marca .container-marca .second-part-marca .laimg1delaparte2, .main-marca .container-marca .second-part-marca .laimg2delaparte2 {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.main-marca .container-marca .second-part-marca h2, .main-marca .container-marca .second-part-marca p {
+  color: white;
+}
+
+@media only screen and (min-width: 480px) {
+  .main-marca .container-marca .first-part-marca .description-marca {
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .main-marca .container-marca .first-part-marca img {
+    width: 160px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  }
+  .main-marca .container-marca .second-part-marca .laimg1delaparte2, .main-marca .container-marca .second-part-marca .laimg2delaparte2 {
+    width: 50%;
+    height: 180px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-marca .container-marca .first-part-marca img {
+    width: 200px;
+    height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  }
+  .main-marca .container-marca .first-part-marca .description-marca {
+    top: 30%;
+    left: 35%;
+  }
+  .main-marca .container-marca .first-part-marca .img2-first-part-marca {
+    bottom: 50px;
+  }
+  .main-marca .container-marca .second-part-marca .laimg1delaparte2, .main-marca .container-marca .second-part-marca .laimg2delaparte2 {
+    width: 50%;
+    height: 180px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-marca .container-marca .first-part-marca {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .main-marca .container-marca .first-part-marca img {
+    width: 300px;
+    height: 400px;
+  }
+  .main-marca .container-marca .first-part-marca .description-marca {
+    top: 40%;
+    left: 35%;
+  }
+  .main-marca .container-marca .second-part-marca .laimg1delaparte2 {
+    width: 40%;
+    height: 360px;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+  }
+  .main-marca .container-marca .second-part-marca .laimg2delaparte2 {
+    width: 40%;
+    height: 360px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-marca .container-marca .first-part-marca {
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .main-marca .container-marca .first-part-marca img {
+    width: 380px;
+    height: 500px;
+  }
+  .main-marca .container-marca .first-part-marca .description-marca {
+    top: 35%;
+    left: 38%;
+    font-size: 25px;
+    width: 320px;
+  }
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.footer .icons i {
+  font-size: 20px;
+  margin: 0px 10px;
+}
+
+.footer .arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+}
+
+.footer .arrow a {
+  height: 39px;
+  width: 37px;
+  text-align: center;
+  background: #001d3d;
+  display: block;
+  border-radius: 3px;
+}
+
+.footer .arrow a span {
+  color: white;
+  font-size: 25px;
+  line-height: 39px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 480px) {
+  .footer {
+    font-size: 18px;
+  }
+  .footer .icons > i {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=anashei.css.map */
