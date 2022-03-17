@@ -333,21 +333,36 @@
 .main-eshop {
   height: auto;
   width: 100%; }
-  .main-eshop .container-eshop {
+  .main-eshop .container-eshop, .main-eshop .container-eshop .div-de-las-chelas {
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     margin: 0px auto;
     background-color: #6a040f; }
-    .main-eshop .container-eshop .row .col .div-tittle-eshop {
-      text-align: center;
-      color: white;
-      padding-top: 10px; }
-    .main-eshop .container-eshop .row .col .div-text-eshop {
-      text-align: center;
-      color: white; }
+    .main-eshop .container-eshop .div-de-las-chelas {
+      background-color: none;
+      margin: 0; }
+      .main-eshop .container-eshop .div-de-las-chelas .div-tittle-eshop {
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        padding-top: 10px; }
+      .main-eshop .container-eshop .div-de-las-chelas .div-text-eshop {
+        font-size: 16px;
+        color: white;
+        padding: 0px 20px; }
+      .main-eshop .container-eshop .div-de-las-chelas .btn-eshop {
+        height: 40px;
+        width: 50%;
+        background-color: #001d3d;
+        color: white;
+        border: none; }
+        .main-eshop .container-eshop .div-de-las-chelas .btn-eshop a {
+          text-decoration: none;
+          color: white;
+          font-size: 16px; }
 
 .main-local {
   height: auto;
@@ -521,6 +536,12 @@
   .footer .icons i {
     font-size: 20px;
     margin: 0px 10px; }
+  .footer .icons #instagram {
+    color: #e4405f; }
+  .footer .icons #twitter {
+    color: #1da1f2; }
+  .footer .icons #whatsapp {
+    color: #20d466; }
   .footer .arrow {
     position: fixed;
     bottom: 30px;
@@ -534,9 +555,9 @@
       display: block;
       border-radius: 3px; }
       .footer .arrow a span {
-        color: white;
         font-size: 25px;
         line-height: 39px;
+        color: white;
         cursor: pointer; }
 
 @media only screen and (min-width: 480px) {

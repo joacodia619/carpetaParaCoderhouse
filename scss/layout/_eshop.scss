@@ -2,25 +2,36 @@
     height: auto;
     width: 100%;
     .container-eshop {
-        height: auto;
-        width: 100%;
-        display: flex;
+        @include sizes-behavior(auto, 100%, flex);
         flex-direction: column;
-        align-items: center;
+        align-content: center;
         margin: 0px auto;
         background-color: #6a040f;
-        .row{
-            .col{
+            .div-de-las-chelas{
+                @extend .container-eshop;
+                background-color: none;
+                margin: 0;
                 .div-tittle-eshop{
+                    @include text(24px, white);
                     text-align: center;
-                    color: white;
                     padding-top: 10px;
                 }
                 .div-text-eshop{
-                    text-align: center;
+                     @include text(16px, white);
+                    padding: 0px 20px;
+                }
+                .btn-eshop{
+                    height: 40px;
+                    width: 50%;
+                    background-color: #001d3d;
                     color: white;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 16px;
+                    }
                 }
             }
-        }
     }
 }

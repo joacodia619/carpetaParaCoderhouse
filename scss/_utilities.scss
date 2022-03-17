@@ -1,0 +1,23 @@
+@mixin sizes-behavior($height, $width, $display){
+
+    height: $height;
+
+    width: $width;
+
+    display: $display;
+
+}
+@mixin text($font-size, $text-color){
+
+    font-size: $font-size;
+
+    color: $text-color;
+
+}
+$redes:( 
+    instagram: #e4405f,
+
+    twitter: #1da1f2,
+
+    whatsapp: #20d466
+);

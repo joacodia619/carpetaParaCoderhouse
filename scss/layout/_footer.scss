@@ -12,9 +12,14 @@
     .icons { 
         i {
         font-size: 20px;
-        margin: 0px 10px;
+        margin: 0px 10px;   
         }
+        @each $redes-sociales, $color in $redes { 
+            ##{$redes-sociales}{
+                color: $color;
+            } 
     }
+    } 
     .arrow{
         position: fixed;
         bottom: 30px;
@@ -28,14 +33,14 @@
             display: block;
             border-radius: 3px;
             span{
-                color: white;
                 font-size: 25px;
                 line-height: 39px;
+                color: white;
                 cursor: pointer;
+                }
             } 
         }
     }
-}
 @media only screen and (min-width: 480px) { 
     .footer {
         font-size: 18px;
