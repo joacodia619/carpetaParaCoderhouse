@@ -139,13 +139,8 @@
       text-align: center;
       font-size: 25px;
       font-family: 'Quantico', sans-serif; }
-  .main-index .pato {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0px auto; }
-    .main-index .pato .carousel-inner .row .col-sm-4 .carousel .carousel-inner .carousel-item img {
-      height: 500px; }
+  .main-index .pato .carousel-inner .row .carousel .carousel-inner .carousel-item img {
+    height: 500px; }
   .main-index .div-marca-index {
     height: 250px;
     width: 100%;
