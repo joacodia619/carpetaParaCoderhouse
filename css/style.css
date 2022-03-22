@@ -135,19 +135,43 @@
     z-index: 1; }
     .main-index .div-chela-index .titulo-index {
       margin-top: 0px;
+      padding-top: 10px;
       text-align: center;
-      font-size: 25px; }
-  .main-index .carousel-inner .row .col .carousel .carousel-item {
-    height: 500px; }
-    .main-index .carousel-inner .row .col .carousel .carousel-item img {
-      height: 100%; }
+      font-size: 25px;
+      font-family: 'Quantico', sans-serif; }
+  .main-index .pato {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto; }
+    .main-index .pato .carousel-inner .row .col-sm-4 .carousel .carousel-inner .carousel-item img {
+      height: 500px; }
   .main-index .div-marca-index {
     height: 250px;
     width: 100%;
     color: white;
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
     .main-index .div-marca-index .text-index {
       text-align: center; }
+    .main-index .div-marca-index .titulo-index {
+      margin-top: 0px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Quantico', sans-serif; }
+    .main-index .div-marca-index .btn-index {
+      width: 60%;
+      background-color: #212529;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px auto; }
     .main-index .div-marca-index video {
       z-index: -1;
       height: 250px;
@@ -167,7 +191,10 @@
   .main-index .div-shop-index {
     height: 200px;
     width: 100%;
-    color: white; }
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
     .main-index .div-shop-index video {
       z-index: -1;
       height: 200px;
@@ -184,12 +211,33 @@
       height: 100%;
       width: 100%;
       opacity: .6; }
+    .main-index .div-shop-index .btn-index {
+      width: 60%;
+      background-color: #212529;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px auto; }
+    .main-index .div-shop-index .text-index {
+      text-align: center; }
+    .main-index .div-shop-index .titulo-index {
+      margin-top: 0px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Quantico', sans-serif; }
   .main-index .div-local-index {
     height: 350px;
     width: 100%;
     background-image: url("../images/contacto.webp");
     color: white;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
     .main-index .div-local-index::after {
       content: "";
       position: absolute;
@@ -199,13 +247,34 @@
       height: 100%;
       width: 100%;
       opacity: .6; }
+    .main-index .div-local-index .btn-index {
+      width: 60%;
+      background-color: #212529;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px auto; }
+    .main-index .div-local-index .text-index {
+      text-align: center; }
+    .main-index .div-local-index .titulo-index {
+      margin-top: 0px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Quantico', sans-serif; }
   .main-index .div-contacto-index {
     height: 200px;
     width: 100%;
     z-index: 1;
     background-image: url("../images/local.webp");
     color: white;
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
     .main-index .div-contacto-index::after {
       content: "";
       position: absolute;
@@ -215,6 +284,24 @@
       height: 100%;
       width: 100%;
       opacity: .6; }
+    .main-index .div-contacto-index .btn-index {
+      width: 60%;
+      background-color: #212529;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px auto; }
+    .main-index .div-contacto-index .text-index {
+      text-align: center; }
+    .main-index .div-contacto-index .titulo-index {
+      margin-top: 0px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Quantico', sans-serif; }
 
 @media only screen and (min-width: 1024px) {
   .main-index {
@@ -227,9 +314,14 @@
       grid-row: 1/3;
       grid-column: 1/2;
       height: 100%; }
-      .main-index .div-chela-index .carousel-inner .row .col .carousel .carousel-inner .carousel-item {
-        height: 375px;
-        margin-top: 50px; }
+      .main-index .div-chela-index .pato .carousel-inner .row .col-sm-4 .carousel {
+        display: flex;
+        justify-content: center; }
+        .main-index .div-chela-index .pato .carousel-inner .row .col-sm-4 .carousel .carousel-inner {
+          width: 250px;
+          height: 492px; }
+          .main-index .div-chela-index .pato .carousel-inner .row .col-sm-4 .carousel .carousel-inner .carousel-item {
+            height: auto; }
     .main-index .div-marca-index {
       grid-row: 2/3;
       grid-column: 2/4;
@@ -252,7 +344,7 @@
       height: 100%; } }
 
 @media only screen and (min-width: 1200px) {
-  .main-index .div-chela-index .carousel-item {
+  .main-index .div-chela-index .pato .carousel-inner .row .col-sm-4 .carousel .carousel-inner .carousel-item {
     height: 500px; } }
 
 .main-contacto {
@@ -263,36 +355,37 @@
   background-size: cover; }
   .main-contacto .container-contacto {
     height: 100%;
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0px auto; }
     .main-contacto .container-contacto .title-formulario {
       font-size: 30px;
+      font-family: 'Quantico', sans-serif;
       font-style: italic;
       font-weight: bold;
-      color: white; }
+      color: black; }
     .main-contacto .container-contacto .description-formulario {
       font-size: 18px;
-      color: white; }
+      color: black; }
     .main-contacto .container-contacto .form {
       height: auto;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
       border-radius: 5px;
-      margin-bottom: 30px; }
+      padding: 20px 0px 20px 0px; }
       .main-contacto .container-contacto .form .label {
+        width: 100%;
         font-size: 18px;
         display: block;
         padding: 10px;
-        margin-bottom: 5px;
+        margin: 0px 0px 5px 10px;
         color: white; }
         .main-contacto .container-contacto .form .label input {
           display: block;
           padding: 10px;
-          width: 80%;
+          width: 95%;
           border: none;
           border-radius: 5px;
           color: black;
@@ -300,31 +393,31 @@
           opacity: 1; }
         .main-contacto .container-contacto .form .label select {
           padding: 10px;
-          width: 60%;
+          width: 70%;
           border: none;
           border-radius: 5px;
           color: black;
           font-size: 18px;
           margin-left: 10px; }
-        .main-contacto .container-contacto .form .label textarea {
-          display: block;
-          width: 90%;
-          height: 140px;
-          resize: none;
-          font-size: 18px;
-          color: black;
-          padding: 5px 10px;
-          margin: 0px auto;
-          border: none;
-          border-radius: 5px; }
+      .main-contacto .container-contacto .form textarea {
+        height: 200px;
+        width: 90%;
+        resize: none;
+        font-size: 18px;
+        color: black;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        display: block;
+        margin: 0px auto; }
       .main-contacto .container-contacto .form .btn {
         display: block;
-        width: 90%;
+        width: 50%;
         padding: 10px;
+        margin: 10px auto 0px;
         font-size: 18px;
         color: white;
-        background-color: black;
-        margin: 10px auto 0px; }
+        background-color: black; }
 
 @media only screen and (min-width: 480px) {
   .main-contacto .container-contacto .form .btn {
@@ -337,18 +430,32 @@
     height: auto;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-content: center;
     margin: 0px auto;
-    background-color: #6a040f; }
+    background-color: #6a040f;
+    padding-bottom: 20px; }
     .main-eshop .container-eshop .div-de-las-chelas {
       background-color: none;
-      margin: 0; }
-      .main-eshop .container-eshop .div-de-las-chelas .div-tittle-eshop {
-        font-size: 24px;
-        color: white;
-        text-align: center;
-        padding-top: 10px; }
+      margin: 0;
+      align-items: center;
+      padding-bottom: 0px; }
+      .main-eshop .container-eshop .div-de-las-chelas .pilar {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .main-eshop .container-eshop .div-de-las-chelas .pilar .div-tittle-eshop {
+          font-size: 24px;
+          color: white;
+          text-align: center;
+          padding-top: 10px;
+          font-family: 'Quantico', sans-serif; }
+        .main-eshop .container-eshop .div-de-las-chelas .pilar img {
+          height: 400px;
+          width: 124px; }
       .main-eshop .container-eshop .div-de-las-chelas .div-text-eshop {
         font-size: 16px;
         color: white;
@@ -358,11 +465,29 @@
         width: 50%;
         background-color: #001d3d;
         color: white;
-        border: none; }
+        border: none;
+        margin: 0px auto; }
         .main-eshop .container-eshop .div-de-las-chelas .btn-eshop a {
           text-decoration: none;
           color: white;
           font-size: 16px; }
+
+@media only screen and (min-width: 1200px) {
+  .main-eshop .container-eshop, .main-eshop .container-eshop .div-de-las-chelas {
+    flex-direction: row;
+    height: 800px; }
+    .main-eshop .container-eshop .div-de-las-chelas {
+      flex-direction: column;
+      max-height: 800px; }
+      .main-eshop .container-eshop .div-de-las-chelas .pilar {
+        flex-direction: column;
+        height: 445px; }
+      .main-eshop .container-eshop .div-de-las-chelas .div-text-eshop {
+        height: 200px;
+        margin: 0px;
+        padding: 20px 10px;
+        display: flex;
+        align-items: center; } }
 
 .main-local {
   height: auto;
@@ -379,10 +504,12 @@
     .main-local .container-local .tittle-local {
       width: 100%;
       font-size: 30px;
+      font-family: 'Quantico', sans-serif;
       font-style: italic;
       font-weight: bold;
       color: black;
-      text-align: center; }
+      text-align: center;
+      padding-top: 10px; }
     .main-local .container-local .mapa {
       width: 100%;
       margin-bottom: 20px; }
@@ -409,6 +536,7 @@
       .main-marca .container-marca .first-part-marca .tittle-marca {
         width: 100%;
         font-size: 30px;
+        font-family: 'Quantico', sans-serif;
         font-style: italic;
         font-weight: bold;
         color: white;
@@ -551,7 +679,7 @@
       height: 39px;
       width: 37px;
       text-align: center;
-      background: #001d3d;
+      background: #212529;
       display: block;
       border-radius: 3px; }
       .footer .arrow a span {

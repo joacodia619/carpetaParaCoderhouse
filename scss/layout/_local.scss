@@ -13,10 +13,12 @@
         .tittle-local {
             width: 100%;
             font-size: 30px;
+            font-family: 'Quantico', sans-serif;
             font-style: italic;
             font-weight: bold;
             color: black;
             text-align: center;
+            padding-top: 10px;
         }
         .mapa {
             width: 100%;
@@ -25,5 +27,5 @@
             iframe {
                 width: 100% !important;
             }
-    }
+        }
 }

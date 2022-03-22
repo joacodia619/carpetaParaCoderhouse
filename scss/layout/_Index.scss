@@ -9,31 +9,61 @@
         z-index: 1;
         .titulo-index{
             margin-top: 0px;
+            padding-top: 10px;
             text-align: center;
             font-size: 25px;
+            font-family: 'Quantico', sans-serif;
         } 
     }
-    .carousel-inner{
-        .row{
-            .col{
-                .carousel{
-                    .carousel-item{
-                        height: 500px;
-                        img{
-                            height: 100%;
-                        }
+    .pato{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        .carousel-inner{
+            .row{
+                .col-sm-4{
+                    .carousel{
+                        .carousel-inner{
+                            .carousel-item{
+                                img{
+                                    height: 500px;
+                                }
+                            }
+                        } 
                     }
                 }
             }
-        }
-    }
+        }    
+    } 
     .div-marca-index {
         height: 250px;
         width: 100%;
         color: white;
         position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         .text-index {
             text-align: center;
+        }
+        .titulo-index{
+            margin-top: 0px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Quantico', sans-serif;
+        } 
+        .btn-index{
+            width: 60%;
+            background-color: #212529; 
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0px auto;
         }
         video{
             z-index: -1;
@@ -58,6 +88,9 @@
         height: 200px;
         width: 100%;
         color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         video{
             z-index: -1;
             height: 200px;
@@ -76,6 +109,27 @@
             width: 100%;
             opacity: .6;
         }
+        .btn-index{
+            width: 60%;
+            background-color: #212529; 
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0px auto;
+        }
+        .text-index {
+            text-align: center;
+        }
+        .titulo-index{
+            margin-top: 0px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Quantico', sans-serif;
+        } 
     }
     .div-local-index {
         height: 350px;
@@ -83,6 +137,9 @@
         background-image: url("../images/contacto.webp");
         color: white;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
             &::after {
         content: "";
             position: absolute;
@@ -93,6 +150,27 @@
             width: 100%;
             opacity: .6;
         }
+        .btn-index{
+            width: 60%;
+            background-color: #212529; 
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0px auto;
+        }
+        .text-index {
+            text-align: center;
+        }
+        .titulo-index{
+            margin-top: 0px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Quantico', sans-serif;
+        } 
     }
     .div-contacto-index{
         height: 200px;
@@ -101,6 +179,9 @@
         background-image: url("../images/local.webp");
         color: white;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         &::after {
             content: "";
             position: absolute;
@@ -111,6 +192,27 @@
             width: 100%;
             opacity: .6;
         }
+        .btn-index{
+            width: 60%;
+            background-color: #212529; 
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0px auto;
+        }
+        .text-index {
+            text-align: center;
+        }
+        .titulo-index{
+            margin-top: 0px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Quantico', sans-serif;
+        } 
     }
 }
 @media only screen and (min-width: 1024px)  {
@@ -124,20 +226,25 @@
             grid-row: 1/3;
             grid-column: 1/2;
             height: 100%;
+            .pato{
             .carousel-inner{
                 .row{
-                    .col{
+                    .col-sm-4{
                         .carousel{
+                            display: flex;
+                                justify-content: center;
                             .carousel-inner{
+                                width: 250px;
+                                height: 492px;
                                 .carousel-item{
-                                    height: 375px;
-                                    margin-top: 50px;
+                                    height: auto;
                                 }
                             }
                         }
                     }
                 }
 
+            }
             }
         }
         .div-marca-index {
@@ -171,8 +278,20 @@
 @media only screen and (min-width: 1200px)  {
     .main-index{ 
         .div-chela-index{
-            .carousel-item {
-                height: 500px;
+            .pato{ 
+                .carousel-inner{ 
+                    .row{ 
+                        .col-sm-4{ 
+                            .carousel{ 
+                                .carousel-inner{ 
+                                    .carousel-item {
+                                        height: 500px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }  
