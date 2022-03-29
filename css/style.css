@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:ital,wght@1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .header {
   height: 70px;
   width: 100%; }
@@ -420,69 +421,74 @@
 
 .main-eshop {
   height: auto;
-  width: 100%; }
-  .main-eshop .container-eshop, .main-eshop .container-eshop .div-de-las-chelas {
-    height: auto;
+  width: 100%;
+  background: #6a040f;
+  padding: 30px 0px; }
+  .main-eshop .container {
+    position: relative;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin: 0px auto;
-    background-color: #6a040f;
-    padding-bottom: 20px; }
-    .main-eshop .container-eshop .div-de-las-chelas {
-      background-color: none;
-      margin: 0;
-      align-items: center;
-      padding-bottom: 0px; }
-      .main-eshop .container-eshop .div-de-las-chelas .pilar {
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .main-eshop .container-eshop .div-de-las-chelas .pilar .div-tittle-eshop {
-          font-size: 24px;
-          color: white;
-          text-align: center;
-          padding-top: 10px;
-          font-family: 'Quantico', sans-serif; }
-        .main-eshop .container-eshop .div-de-las-chelas .pilar img {
-          height: 400px;
-          width: 124px; }
-      .main-eshop .container-eshop .div-de-las-chelas .div-text-eshop {
-        font-size: 16px;
-        color: white;
-        padding: 0px 20px; }
-      .main-eshop .container-eshop .div-de-las-chelas .btn-eshop {
-        height: 40px;
-        width: 50%;
-        background-color: #001d3d;
-        color: white;
-        border: none;
-        margin: 0px auto; }
-        .main-eshop .container-eshop .div-de-las-chelas .btn-eshop a {
-          text-decoration: none;
-          color: white;
-          font-size: 16px; }
-
-@media only screen and (min-width: 1200px) {
-  .main-eshop .container-eshop, .main-eshop .container-eshop .div-de-las-chelas {
-    flex-direction: row;
-    height: 800px; }
-    .main-eshop .container-eshop .div-de-las-chelas {
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0px; }
+    .main-eshop .container .card {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      max-width: 350px;
+      height: 251px;
+      margin: 40px 10px;
+      padding: 20px 15px;
+      display: flex;
       flex-direction: column;
-      max-height: 800px; }
-      .main-eshop .container-eshop .div-de-las-chelas .pilar {
-        flex-direction: column;
-        height: 445px; }
-      .main-eshop .container-eshop .div-de-las-chelas .div-text-eshop {
-        height: 200px;
-        margin: 0px;
-        padding: 20px 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      transition: .3s ease-in-out; }
+      .main-eshop .container .card:hover {
+        height: 470px; }
+        .main-eshop .container .card:hover .imgBx {
+          height: 300px;
+          width: 93px;
+          margin: 0 auto;
+          top: -100px; }
+          .main-eshop .container .card:hover .imgBx img {
+            height: 100%;
+            width: 100%; }
+          .main-eshop .container .card:hover .imgBx p {
+            display: none; }
+        .main-eshop .container .card:hover .content {
+          visibility: visible;
+          opacity: 1;
+          margin-top: -100px;
+          transition-delay: .3s; }
+      .main-eshop .container .card .content {
+        position: relative;
+        margin-top: -200px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s ease-in-out;
+        font-family: 'Montserrat', sans-serif; }
+      .main-eshop .container .card .imgBx {
         display: flex;
-        align-items: center; } }
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        top: -20px;
+        z-index: 1;
+        font-family: 'Montserrat', sans-serif; }
+        .main-eshop .container .card .imgBx img {
+          height: 200px;
+          width: 62px; }
+        .main-eshop .container .card .imgBx p {
+          padding-top: 30px;
+          font-size: 20px;
+          color: #fff; }
 
 .main-local {
   height: auto;

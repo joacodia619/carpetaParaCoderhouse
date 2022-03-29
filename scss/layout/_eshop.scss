@@ -1,77 +1,83 @@
 .main-eshop {
     height: auto;
     width: 100%;
-    .container-eshop {
-        @include sizes-behavior(auto, 100%, flex);
+    background: #6a040f;
+    padding: 30px 0px;
+    .container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
         justify-content: center;
-        flex-direction: column;
-        align-content: center;
-        margin: 0px auto;
-        background-color: #6a040f;
-        padding-bottom: 20px;
-            .div-de-las-chelas{
-                @extend .container-eshop;
-                background-color: none;
-                margin: 0;
-                align-items: center;
-                padding-bottom: 0px;
-                .pilar{
-                    height: auto;
-                    width: 100%;
-                    display: flex; 
-                    flex-direction: column;
-                    align-items: center;
-                    .div-tittle-eshop{
-                        @include text(24px, white);
-                        text-align: center;
-                        padding-top: 10px;
-                        font-family: 'Quantico', sans-serif;
-                    }
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px 0px;
+        .card{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            max-width: 350px;
+            height: 251px;
+            margin: 40px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            transition: .3s ease-in-out;
+            &:hover{
+            height: 470px;
+                .imgBx{
+                    height: 300px;
+                    width: 93px;
+                    margin: 0 auto;
+                    top: -100px;
                     img{
-                        height: 400px;
-                        width: 124px;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    p{
+                        display: none;
                     }
                 }
-                .div-text-eshop{
-                    @include text(16px, white);
-                    padding: 0px 20px;
+                .content{
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: -100px;
+                    transition-delay: .3s;
                 }
-                .btn-eshop{
-                    height: 40px;
-                    width: 50%;
-                    background-color: #001d3d;
-                    color: white;
-                    border: none;
-                    margin: 0px auto;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                        font-size: 16px;
-                    }
-                }
+                
             }
-    } 
-}
-@media only screen and (min-width: 1200px)  {
-    .main-eshop{
-        .container-eshop{
-            flex-direction: row;
-            height: 800px;
-            .div-de-las-chelas{
+            .content{
+            position: relative;
+                margin-top: -200px;
+                padding: 10px 15px;
+                text-align: center;
+                color: #fff;
+                visibility: hidden;
+                opacity: 0;
+                transition: .5s ease-in-out;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .imgBx{
+                display: flex;
                 flex-direction: column;
-                max-height: 800px;
-                .pilar{
-                    flex-direction: column;
-                    height: 445px;
-                }
-                .div-text-eshop{
+                align-items: center;
+                position: relative;
+                height: 100vh;
+                width: 100%;
+                top: -20px;
+                z-index: 1;
+                font-family: 'Montserrat', sans-serif;
+                img{
                     height: 200px;
-                    margin: 0px;
-                    padding: 20px 10px;
-                    display: flex;
-                    align-items: center;
+                    width: 62px;
                 }
-            }
+                p{
+                    padding-top: 30px;
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }    
         }
     }
 } 
