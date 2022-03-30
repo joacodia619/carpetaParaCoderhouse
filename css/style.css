@@ -662,15 +662,19 @@
   text-align: center;
   background-color: black;
   color: white; }
-  .footer .icons i {
-    font-size: 20px;
-    margin: 0px 10px; }
-  .footer .icons #instagram {
-    color: #e4405f; }
-  .footer .icons #twitter {
-    color: #1da1f2; }
-  .footer .icons #whatsapp {
-    color: #20d466; }
+  .footer .icons {
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .footer .icons .items i {
+      font-size: 20px;
+      margin: 0px 10px; }
+    .footer .icons .items #instagram {
+      color: #e4405f; }
+    .footer .icons .items #twitter {
+      color: #1da1f2; }
+    .footer .icons .items #whatsapp {
+      color: #20d466; }
   .footer .arrow {
     position: fixed;
     bottom: 30px;
@@ -692,5 +696,5 @@
 @media only screen and (min-width: 480px) {
   .footer {
     font-size: 18px; }
-    .footer .icons > i {
+    .footer .icons .items > i {
       font-size: 25px; } }
