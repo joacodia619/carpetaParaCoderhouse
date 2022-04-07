@@ -9,10 +9,12 @@
     text-align: center;
     background-color: black;
     color: white;
+    font-family: 'Quantico', sans-serif;
     .icons { 
         display: flex;
         flex-direction: row;
         list-style: none;
+        padding-left: 0px;
         .items{
             i {
         font-size: 20px;
