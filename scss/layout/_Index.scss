@@ -293,7 +293,7 @@
 
 @media only screen and (min-width: 1024px) {
     .main-index {
-        height: 600px;
+        height: 100vh;
         width: 100%;
         display: grid;
         grid-template-columns: 40% 30% 10% 20%;
@@ -336,7 +336,7 @@
             height: 100%;
 
             video {
-                height: 300px;
+                height: 100%;
             }
         }
 
@@ -346,7 +346,7 @@
             height: 100%;
 
             video {
-                height: 300px;
+                height: 100%;
             }
         }
 
@@ -394,4 +394,5 @@
             background-size: 560px 600px;
         }
     }
+
 }
