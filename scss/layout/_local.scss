@@ -3,13 +3,21 @@
     width: 100%;
     margin: 0px 0px;
     background-color: #b6ad90;
+
     .container-local {
         height: 100%;
         width: 90%;
-        display: flex;
+        display: grid;
         flex-direction: column;
         align-items: center;
         margin: 0px auto;
+
+        .mapa {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+
         .tittle-local {
             width: 100%;
             font-size: 30px;
@@ -20,12 +28,9 @@
             text-align: center;
             padding-top: 10px;
         }
-        .mapa {
-            width: 100%;
-            margin-bottom: 20px;
+
+        iframe {
+            width: 100% !important;
         }
-            iframe {
-                width: 100% !important;
-            }
-        }
+    }
 }

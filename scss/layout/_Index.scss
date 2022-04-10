@@ -1,37 +1,58 @@
 .main-index {
     width: 100%;
     height: auto;
+
     .div-chela-index {
         height: 560px;
         width: 100%;
         color: black;
         z-index: 1;
-        background-image: url(/carpetaParaCoderhouse/images/underground-5336747_1920.webp);
-        background-repeat: no-repeat;
-        background-size: 360px 560px;
-        .titulo-index{
+
+        .titulo-index {
             margin-top: 0px;
             padding-top: 10px;
             text-align: center;
             font-size: 25px;
             font-family: 'Quantico', sans-serif;
-        } 
+        }
+
+        video {
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            background: #DBD5CC;
+            height: 100%;
+            width: 100%;
+            opacity: .6;
+        }
     }
-    .pato{
-        .carousel-inner{
-            .row{
-                    .carousel{
-                        .carousel-inner{
-                            .carousel-item{
-                                img{
-                                    height: 500px;
-                                }
+
+    .pato {
+        .carousel-inner {
+            .row {
+                .carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            img {
+                                height: 500px;
                             }
-                        } 
+                        }
                     }
+                }
             }
-        }    
-    } 
+        }
+    }
+
     .div-marca-index {
         height: 250px;
         width: 100%;
@@ -40,18 +61,21 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+
         .text-index {
             text-align: center;
         }
-        .titulo-index{
+
+        .titulo-index {
             margin-top: 0px;
             text-align: center;
             font-size: 25px;
             font-family: 'Quantico', sans-serif;
-        } 
-        .btn-index{
+        }
+
+        .btn-index {
             width: 60%;
-            background-color: #212529; 
+            background-color: #212529;
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -61,7 +85,8 @@
             font-size: 16px;
             margin: 0px auto;
         }
-        video{
+
+        video {
             z-index: -1;
             height: 250px;
             width: 100%;
@@ -69,7 +94,8 @@
             top: 0px;
             object-fit: cover;
         }
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             top: 0;
@@ -80,6 +106,7 @@
             opacity: .6;
         }
     }
+
     .div-shop-index {
         height: 200px;
         width: 100%;
@@ -87,7 +114,8 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        video{
+
+        video {
             z-index: -1;
             height: 200px;
             width: 100%;
@@ -95,19 +123,22 @@
             top: 0px;
             object-fit: cover;
         }
+
         &::after {
-        content: "";
+            content: "";
             position: absolute;
             top: 0;
             z-index: -1;
             background: #9d0208;
-            height: 100%;;
+            height: 100%;
+            ;
             width: 100%;
             opacity: .6;
         }
-        .btn-index{
+
+        .btn-index {
             width: 60%;
-            background-color: #212529; 
+            background-color: #212529;
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -117,16 +148,19 @@
             font-size: 16px;
             margin: 0px auto;
         }
+
         .text-index {
             text-align: center;
         }
-        .titulo-index{
+
+        .titulo-index {
             margin-top: 0px;
             text-align: center;
             font-size: 25px;
             font-family: 'Quantico', sans-serif;
-        } 
+        }
     }
+
     .div-local-index {
         height: 350px;
         width: 100%;
@@ -136,19 +170,22 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-            &::after {
-        content: "";
+
+        &::after {
+            content: "";
             position: absolute;
             top: 0;
             z-index: -1;
             background: #b6ad90;
-            height: 100%;;
+            height: 100%;
+            ;
             width: 100%;
             opacity: .6;
         }
-        .btn-index{
+
+        .btn-index {
             width: 60%;
-            background-color: #212529; 
+            background-color: #212529;
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -158,17 +195,20 @@
             font-size: 16px;
             margin: 0px auto;
         }
+
         .text-index {
             text-align: center;
         }
-        .titulo-index{
+
+        .titulo-index {
             margin-top: 0px;
             text-align: center;
             font-size: 25px;
             font-family: 'Quantico', sans-serif;
-        } 
+        }
     }
-    .div-contacto-index{
+
+    .div-contacto-index {
         height: 200px;
         width: 100%;
         z-index: 1;
@@ -178,19 +218,22 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+
         &::after {
             content: "";
             position: absolute;
             top: 0;
             z-index: -1;
             background: #414833;
-            height: 100%;;
+            height: 100%;
+            ;
             width: 100%;
             opacity: .6;
         }
-        .btn-index{
+
+        .btn-index {
             width: 60%;
-            background-color: #212529; 
+            background-color: #212529;
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -200,102 +243,119 @@
             font-size: 16px;
             margin: 0px auto;
         }
+
         .text-index {
             text-align: center;
         }
-        .titulo-index{
+
+        .titulo-index {
             margin-top: 0px;
             text-align: center;
             font-size: 25px;
             font-family: 'Quantico', sans-serif;
-        } 
+        }
     }
 }
-@media only screen and (min-width: 480px){
-    .main-index{
-        .div-chela-index{
+
+@media only screen and (min-width: 480px) {
+    .main-index {
+        .div-chela-index {
             background-size: 480px 560px;
         }
     }
-}  
-@media only screen and (min-width: 576px){
-    .main-index{
-        .div-chela-index{
+}
+
+@media only screen and (min-width: 576px) {
+    .main-index {
+        .div-chela-index {
             background-size: 576px 560px;
         }
     }
-}  
-@media only screen and (min-width: 768px){
-    .main-index{
-        .div-chela-index{
+}
+
+@media only screen and (min-width: 768px) {
+    .main-index {
+        .div-chela-index {
             background-image: url(../images/rock-2147359.webp);
             background-size: 768px 560px;
         }
     }
-}  
-@media only screen and (min-width: 992px){
-    .main-index{
-        .div-chela-index{
+}
+
+@media only screen and (min-width: 992px) {
+    .main-index {
+        .div-chela-index {
             background-image: url(../images/rock-2147359.webp);
             background-size: 992px 560px;
         }
     }
 }
-@media only screen and (min-width: 1024px)  {
+
+@media only screen and (min-width: 1024px) {
     .main-index {
         height: 600px;
         width: 100%;
         display: grid;
         grid-template-columns: 40% 30% 10% 20%;
         grid-template-rows: 50% 50%;
+
         .div-chela-index {
             grid-row: 1/3;
             grid-column: 1/2;
             height: 100%;
             background-image: url(/carpetaParaCoderhouse/images/underground-5336747_1920.webp);
             background-size: 409.594px 600px;
-            .pato{
-            .carousel-inner{
-                .row{
-                    .col-sm-4{
-                        .carousel{
-                            display: flex;
+
+            .pato {
+                .carousel-inner {
+                    .row {
+                        .col-sm-4 {
+                            .carousel {
+                                display: flex;
                                 justify-content: center;
-                            .carousel-inner{
-                                width: 250px;
-                                height: 492px;
-                                .carousel-item{
-                                    height: auto;
+
+                                .carousel-inner {
+                                    width: 250px;
+                                    height: 492px;
+
+                                    .carousel-item {
+                                        height: auto;
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
-            }
+                }
             }
         }
+
         .div-marca-index {
             grid-row: 2/3;
             grid-column: 2/4;
             height: 100%;
+
             video {
                 height: 300px;
             }
         }
+
         .div-shop-index {
             grid-row: 1/2;
             grid-column: 2/3;
             height: 100%;
+
             video {
                 height: 300px;
             }
         }
+
         .div-local-index {
             grid-row: 1/2;
             grid-column: 3/5;
             height: 100%;
         }
+
         .div-contacto-index {
             grid-row: 2/3;
             grid-column: 4/5;
@@ -303,16 +363,18 @@
         }
     }
 }
-@media only screen and (min-width: 1200px)  {
-    .main-index{ 
-        .div-chela-index{
+
+@media only screen and (min-width: 1200px) {
+    .main-index {
+        .div-chela-index {
             background-size: 480px 600px;
-            .pato{ 
-                .carousel-inner{ 
-                    .row{ 
-                        .col-sm-4{ 
-                            .carousel{ 
-                                .carousel-inner{ 
+
+            .pato {
+                .carousel-inner {
+                    .row {
+                        .col-sm-4 {
+                            .carousel {
+                                .carousel-inner {
                                     .carousel-item {
                                         height: 500px;
                                     }
@@ -323,11 +385,12 @@
                 }
             }
         }
-    }  
-} 
-@media only screen and (min-width: 1400px)  {
-    .main-index{ 
-        .div-chela-index{
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-index {
+        .div-chela-index {
             background-size: 560px 600px;
         }
     }

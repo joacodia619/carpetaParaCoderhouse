@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:ital,wght@1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-@mixin sizes-behavior($height, $width, $display){
+@mixin sizes-behavior($height, $width, $display) {
 
     height: $height;
 
@@ -10,17 +10,23 @@
     display: $display;
 
 }
-@mixin text($font-size, $text-color){
+
+@mixin text($font-size, $text-color) {
 
     font-size: $font-size;
 
     color: $text-color;
 
 }
-$redes:( 
-    instagram: #e4405f,
+
+$redes:(instagram: #e4405f,
 
     twitter: #1da1f2,
 
-    whatsapp: #20d466
-);
+    whatsapp: #20d466);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
